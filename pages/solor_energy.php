@@ -27,9 +27,9 @@
         include('../components/sidebar.php');
         ?>
         <div class="map_div">
-            <h2 class="h2">Network Overview</h2>
+            <h2 class="h2">Solor Energy Plant</h2>
 
-            <img class="applicationLogo" src="../images/map1.png" height="700px" width="auto">
+            <img class="applicationLogo" src="../images/solor.png" height="500px" width="auto">
         </div>
     </div>
 </body>

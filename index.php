@@ -51,7 +51,7 @@
             .input{
                 margin-bottom: 4px;
                 height: 28px;
-                
+                width: 200px;
                 border-radius: 3px;
             }
     </style>
@@ -63,11 +63,11 @@
         <div class = "login_inner"> 
         
         <img class="appLogo" src="./images/logo3.png" height="70px">   
-        <div class =  "form">            
-         <input class="input" type= "text" placeholder = "User Name"> 
-         <input class="input" type= "text" placeholder = "Password"> 
-         <button class= "btn">Login</button>
-    </div>
+        <form name="myform" method="POST" action="./configuration/login.php" class="form">       
+         <input class="input"  type="text" name="email" placeholder="User Name" / autocomplete="off" required> 
+         <input class="input" type="password" name="password" placeholder="Password" / autocomplete="off" required> 
+         <button type="submit" class= "btn">Login</button>
+        </form>
         </div>
     </div>
 

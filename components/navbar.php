@@ -40,7 +40,7 @@ body {
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 13px 10px 13px 10px;
+  padding: 10px 10px 10px 10px;
   text-decoration: none;
   color: #efefef;
 }
@@ -54,7 +54,7 @@ body {
     .nav > .nav-links > a:hover {
         border-bottom: 3px solid transparent; /* Adjust the thickness as needed */
         position: relative; /* Necessary for positioning the border */
-        padding-bottom: 5px; /* Adjust this value to control the distance between text and underline */
+        padding-bottom: 8px; /* Adjust this value to control the distance between text and underline */
     }
 
     .nav > .nav-links > a:hover::after {
@@ -81,17 +81,17 @@ body {
   }
   .nav > .nav-btn > label {
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.3);
   }
   .nav > .nav-btn > label > span {
     display: block;
-    width: 25px;
-    height: 10px;
+    width: 22px;
+    height: 8px;
     border-top: 2px solid white;
   }
   .nav > .nav-links {
@@ -131,10 +131,10 @@ body {
   </div>
   
   <div class="nav-links">
-    <a href="//github.io/jo_geek" target="_blank">DASHBOARD</a>
-    <a href="http://stackoverflow.com/users/4084003/" target="_blank">DIAGRAMS</a>
-    <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">TRENDS</a>
-    <a href="https://codepen.io/jo_Geek/" target="_blank">ALARMS</a>
-    <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">REPORTS</a>
+    <a href="#" target="_blank">DASHBOARD</a>
+    <a href="#" target="_blank">DIAGRAMS</a>
+    <a href="#" target="_blank">TRENDS</a>
+    <a href="#" target="_blank">ALARMS</a>
+    <a href="#" target="_blank">REPORTS</a>
   </div>
 </div>
