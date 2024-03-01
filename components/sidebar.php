@@ -1,4 +1,3 @@
-
 <head>
 <style>
 /* Sidebar styling*/
@@ -14,16 +13,48 @@
     border-radius: 7px;
     margin-left: 12px;
     margin-right: 10px;
+    transition: width 0.3s ease; /* Add transition for smooth animation */
 }
+
+.sidebar.closed {
+    width: 50px;
+    margin-right: 0px;
+    background-color: none;
+}
+
+.sidebar.closed h2{
+    display: block;
+    transform: rotate(90deg);
+}
+.sidebar.closed h3{
+    display: none;
+}
+
+.sidebar h2{
+    display: none;
+}
+
+.sidebar .toggle-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 480px) {
     .sidebar {
         width: 50px;
         margin-right: 0px;
-  }
-  .sidebar h2{
-    display: none;
-  }
+    }
+    .sidebar h3{
+        display: none;
+    }
+    .sidebar h2{
+        display: block;
+        transform: rotate(90deg);
+    }
 }
+
 /* Map_div styling */
 .map_div {
     width: 85%;
@@ -59,6 +90,9 @@
     padding-bottom: 7px;
     font-size: 13px;
     color: black;
+    margin: 0px;
+   
+    padding: 10px 3px;
 }
 
 .diageram_below{
@@ -67,34 +101,56 @@
     border-bottom: 1px solid gray;
     padding-left:5px;
     padding-bottom: 4px;
+    margin: 0px;
+    padding: 10px 3px;
+
 }
 
 .diageram_below:hover{
-           color: black;
+           background-color:#e5e5e5;
             cursor: pointer;
+
             
         }
-  .active{
+.active{
     border-bottom: 1px solid #1f5897;
+    border-top: 1px solid #1f5897;
+    background-color: #95bfed;
 
-  }
+}
+.side_items {
+     position: relative;
+}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
-<div class="sidebar">  
+<div class="sidebar" id="sidebar">  
    <section class= "side_items"> 
-    <p class ="diageram">Diagram Section</p>
+    <div class="toggle-button" onclick="toggleSidebar()">
+        <i class="fa fa-bars"></i>
+    </div>
+    <h3 class ="diageram">Diagram Section</h3>
 
-    <p class ="diageram_below active">1- &nbsp; Overview<i class="fa fa-ellipsis-v" style="float: right; margin-right: 10px;"></i></p>
-    <p class ="diageram_below">2- &nbsp; Transmission Network <i class="fa fa-ellipsis-v" style="float: right; margin-right: 10px;"></i></p>
-    <p class ="diageram_below">3- &nbsp; Regional EUI Map <i class="fa fa-ellipsis-v" style="float: right; margin-right: 10px;"></i> </p>
-    <p class ="diageram_below">4- &nbsp; Wind Generation <i class="fa fa-ellipsis-v" style="float: right; margin-right: 10px;"></i></p>
-    <p class ="diageram_below">5- &nbsp; Solar Generation <i class="fa fa-ellipsis-v" style="float: right; margin-right: 10px;"></i></p>
-    <p class ="diageram_below">6- &nbsp; Transformer Monitoring  <i class="fa fa-ellipsis-v" style="float: right; margin-right: 10px;"></i></p>  
+    <h2 class ="diageram" style = " margin-left: 10px; border: none; height:36px;" >
+    <div class="toggle-button" onclick="toggleSidebar()">
+        <i class="fa fa-bars"></i>
+    </div>
+    <p style = " margin-left: 50px;margin-top: 2px;">Diagram&#160;Section</p>
+</h2>
+    <h3 class ="diageram_below active">1- &nbsp; Overview<i class="fa fa-ellipsis-v" style="float: right; margin-right: 10px;"></i></h3>
+    <h3 class ="diageram_below" style= "padding:">2- &nbsp; Transmission Network <i class="fa fa-ellipsis-v" style="float: right; margin-right: 10px;"></i></h3>
+    <h3 class ="diageram_below">3- &nbsp; Regional EUI Map <i class="fa fa-ellipsis-v" style="float: right; margin-right: 10px;"></i> </h3>
+    <h3 class ="diageram_below">4- &nbsp; Wind Generation <i class="fa fa-ellipsis-v" style="float: right; margin-right: 10px;"></i></h3>
+    <h3 class ="diageram_below">5- &nbsp; Solar Generation <i class="fa fa-ellipsis-v" style="float: right; margin-right: 10px;"></i></h3>
+    <h3 class ="diageram_below">6- &nbsp; Transformer Monitoring  <i class="fa fa-ellipsis-v" style="float: right; margin-right: 10px;"></i></h3>  
    </section> 
 </div>
 
-
-
+<script>
+    function toggleSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("closed");
+    }
+</script>

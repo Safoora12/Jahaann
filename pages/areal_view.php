@@ -20,18 +20,20 @@
     <?php
     include('../components/navbar.php');
     ?>
-
-
     <div id="main">
         <?php
         include('../components/sidebar.php');
         ?>
-        <div class="map_div">
+        <div class="map_div" style="position: relative;">
             <h2 class="h2">Network Overview</h2>
 
-            <img class="applicationLogo" src="../images/map1.png" height="700px" width="auto">
+            <img class="applicationLogo" src="../images/map4.png" height="750px" width="auto" style="padding-left: 35px;">
+            <?php
+            include('../components/area_set.php');
+            ?>
         </div>
     </div>
 </body>
+
 
 </html>
