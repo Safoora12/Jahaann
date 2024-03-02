@@ -117,6 +117,11 @@ body {
     overflow-y: auto;
   }
 }
+.activee{
+       border-bottom: 3px solid white; /* Adjust the thickness as needed */
+        /* position: relative; Necessary for positioning the border */
+       
+   }
 </style>
 
 <div class="nav">
@@ -131,10 +136,10 @@ body {
   </div>
   
   <div class="nav-links">
-    <a href="#" target="_blank">DASHBOARD</a>
-    <a href="#" target="_blank">DIAGRAMS</a>
-    <a href="#" target="_blank">TRENDS</a>
-    <a href="#" target="_blank">ALARMS</a>
-    <a href="#" target="_blank">REPORTS</a>
+    <a href="#">DASHBOARD</a>
+    <a href="#" class="activee" style="padding-bottom:5px;">DIAGRAMS</a>
+    <a href="#">TRENDS</a>
+    <a href="#">ALARMS</a>
+    <a href="#">REPORTS</a>
   </div>
 </div>

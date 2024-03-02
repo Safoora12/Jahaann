@@ -62,7 +62,7 @@
     <div class="login_banner">
         <div class = "login_inner"> 
         
-        <img class="appLogo" src="./images/logo3.png" height="70px">   
+        <img class="appLogo" src="./images/logo1.png" height="70px">   
         <form name="myform" method="POST" action="./configuration/login.php" class="form">       
          <input class="input"  type="text" name="email" placeholder="User Name" / autocomplete="off" required> 
          <input class="input" type="password" name="password" placeholder="Password" / autocomplete="off" required> 

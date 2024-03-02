@@ -49,7 +49,8 @@ if (mysqli_num_rows($result) > 0) {
 //         header('location: error.php');
 //  }
 
-}else {
+} else {
   $_SESSION["in"] = "Invalid Email/Password";
-  header("location:index.php");
+  echo '<script>alert("Invalid Email/Password"); window.location.href="../index.php";</script>';
+  // You can add additional logic here if needed.
 }
