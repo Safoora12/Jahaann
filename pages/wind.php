@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
     <style>
         .body {
             background-color: #ebebeb;
@@ -33,10 +33,10 @@
         include('../components/sidebar.php');
         ?>
         <div class="map_div" style="position: relative;">
-            <h2 class="h2">Wind Farm</h2>
+            <h2 class="h2">Wind Power Monitoring</h2>
             <!-- Setting points below -->
-
-            <div style="position:absolute; top:532px; left:600px;color:black;width:180px">
+            <a href="./areal_view.php"><img class="applicationLogo" src="../images/back.png" width="60px" style="position: absolute;right:10px; top:10px"></a>
+            <div style="position:absolute; top:532px; left:600px;color:black;width:200px">
                 <p style="padding-bottom:1px; font-size:14px; font-weight: 600;">Wind Power Transmission</p>
                 <p style="padding-bottom:1px;">Power Flow</p>
                 <p style="padding-bottom:1px;">Voltage</p>
@@ -59,13 +59,15 @@
                 <p style="padding-bottom:1px;">Voltage</p>
                 <p style="padding-bottom:1px;">Current</p>
                 <p style="padding-bottom:1px;">Status</p>
+                <p style="padding-bottom:1px;">Effeciency</p>
             </div>
             <div style="position:absolute; top:40px; left:965px;color:#0000FF;width:180px">
                 <p style="padding-bottom:22px;"></p>
                 <p style="padding-bottom:1px;">44 MW</p>
-                <p style="padding-bottom:1px;">0.7 kV</p>
+                <p style="padding-bottom:1px;">11 kV</p>
                 <p style="padding-bottom:1px;">41.7 kA</p>
                 <p style="padding-bottom:1px;">Online</p>
+                <p style="padding-bottom:1px;">85 %</p>
             </div>
             <div style="position:absolute; top:478px; left:147px;color:black;width:180px">
                 <p style="padding-bottom:2px;">Wind Speed</p>
@@ -80,8 +82,8 @@
             <div class="vertical-line" style="position: absolute;left:760px; top:59px;"></div>
             <div class="vertical-line" style="height:120px;position: absolute;left:430px; top:329px;transform:rotate(-65deg)"></div>
             <img class="applicationLogo" src="../images/meter4.png" style=" position: absolute;left:700px; top:53px;">
-            <img class="applicationLogo" src="../images/Wind_turbine.png" width="auto" height="400px" style="position: absolute;left:200px; top:0px;">
-            <img class="applicationLogo" src="../images/Wind_turbine.png" width="auto" height="400px" style="position: absolute;left:380px; top:100px;">
+            <img class="applicationLogo" src="../images/Wind_turbin.png" width="auto" height="400px" style="position: absolute;left:200px; top:0px;">
+            <img class="applicationLogo" src="../images/Wind_turbin.png" width="auto" height="400px" style="position: absolute;left:380px; top:100px;">
             <img class="applicationLogo" src="../images/wind1.jpg" style="margin-top: 30px;">
             <img class="applicationLogo" src="../images/meter.png" style="width: 100px; position: absolute;left:764px; top:540px;">
         </div>

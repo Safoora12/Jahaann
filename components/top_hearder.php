@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Top Header</title>
+    <title>Jahaann</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
 
     <style>
         .bannerTable {
@@ -68,7 +69,7 @@
    <div id="firstBannerContent" class="noSelect" >
     <div class="bannerTable"> 
         <div id="div_logo">
-        <img class="applicationLogo" src="../images/logo3.png" height="50px">
+        <img class="applicationLogo" src="../images/logo1.png" height="50px">
        
     </div>
         <div id="applicationTitle" class="applicationTitle"></div>
